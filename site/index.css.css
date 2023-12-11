@@ -1,0 +1,186 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    max-height: 100vh;
+    background-image: url(pictures/cover.png);
+    background-image: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background:rgba(138, 128, 128, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+h2{
+    color: aqua;
+    margin-left: 180px;
+    margin-top: 280px;
+
+}
+p{
+    color: aqua;
+    margin-left: 180px;
+    margin-top: 280px;
+    text-align: center;
+}
+
+.logo{
+    font-size: 32px;
+    color: aqua;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: aqua;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;  
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .3s;
+
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.button{
+    margin-left: 180px;
+    margin-top: 225px;
+}
+
+.button1{
+    border: solid 2px;
+    border-radius: 15px;
+    border-color: aqua;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    margin-top: 500px;
+    margin-left: 160px;
+
+}
+.button1:hover{
+    transition: transform 0.5s ease;
+    transform: rotate(360deg);
+}
+
+.button2{
+    border: solid 2px;
+    border-radius: 15px;
+    border-color: aqua;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+
+}
+.button2:hover{
+        -webkit-animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+                animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    }
+    @-webkit-keyframes flip-horizontal-bottom {
+        0% {
+          -webkit-transform: rotateX(0);
+                  transform: rotateX(0);
+                  transition: 0.5s;
+        }
+        100% {
+          -webkit-transform: rotateX(-360deg);
+                  transform: rotateX(-360deg);
+                  transition: 0.5s;
+        }
+      }
+      
+.button3{
+    border: solid 2px;
+    border-radius: 15px;
+    border-color: aqua;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+    
+}
+.button3:hover{
+    -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+  @keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+  }
+  
+.button4{
+    border: solid 2px;
+    border-radius: 15px;
+    border-color: aqua;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+
+}
+.button4:hover{
+    transition: transform 0.5s ease;
+    transform: rotate(360deg);
+}
+.button5{
+    border: solid 2px;
+    border-radius: 15px;
+    border-color: aqua;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    margin-left: 30px;
+
+}
+.button5:hover{
+    transition: transform 0.5s ease;
+    transform: rotate(360deg);
+}
